@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Progress Bar
+    </title>
+    <link
+    rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+<div class="skill" >
+    <div class="skill-box">
+    <span class="title" >HTML</span>
+    <div class="skill-bar">
+        <span class="skill-per html">
+        <span class="tooltip" id="number1">90%</span>
+    </span>
+    </div>
+</div>
+<div class="skill-box">
+    <span class="title" >CSS</span>
+    <div class="skill-bar">
+        <span class="skill-per css">
+        <span class="tooltip" id="number2">70%</span>
+    </span>
+    </div>
+</div>
+<div class="skill-box">
+    <span class="title" >JAVA SCRIPT</span>
+    <div class="skill-bar">
+        <span class="skill-per javascript">
+        <span class="tooltip" id="number3">40%</span>
+    </span>
+    </div>
+</div>
+<div class="skill-box">
+    <span class="title" >REACT</span>
+    <div class="skill-bar">
+        <span class="skill-per react">
+        <span class="tooltip" id="number4">20%</span>
+    </span>
+    </div>
+</div>
+</div>
+<script>
+    let number1=document.getElementById("number1");
+    let counter1=0;
+    setInterval(()=>{
+        if (counter1==90){
+            clearInterval();
+        }else{
+            counter1+=1;
+            number1.innerHTML = counter1+"%";
+        }
+    },12)
+    let number2=document.getElementById("number2");
+    let counter2=0;
+    setInterval(()=>{
+        if (counter2==70){
+            clearInterval();
+        }else{
+            counter2+=1;
+            number2.innerHTML = counter2+"%";
+        }
+    },15)
+    let number3=document.getElementById("number3");
+    let counter3=0;
+    setInterval(()=>{
+        if (counter3==40){
+            clearInterval();
+        }else{
+            counter3+=1;
+            number3.innerHTML = counter3+"%";
+        }
+    },30)
+    let number4=document.getElementById("number4");
+    let counter4=0;
+    setInterval(()=>{
+        if (counter4==20){
+            clearInterval();
+        }else{
+            counter4+=1;
+            number4.innerHTML = counter4+"%";
+        }
+    },50)
+</script>
+</body>
+</html>
